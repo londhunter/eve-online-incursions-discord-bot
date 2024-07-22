@@ -128,6 +128,11 @@ docker build . -t opetdev/eve-online-incursion-discord-bot:1.0.3
 docker buildx build . -t opetdev/eve-online-incursion-discord-bot:1.0.3 --push --platform=linux/arm64,linux/amd64,linux/arm/v7,linux/arm/v6
 ```
 
+#### Log tail
+```
+docker logs --tail 10 -f eve-online-incursion-bot-incursion-bot-1
+```
+
 ## CCP Copyright Notice
 
 EVE Online and the EVE logo are the registered trademarks of CCP hf. All rights are reserved worldwide. All other trademarks are the property of their respective owners. EVE Online, the EVE logo, EVE and all associated logos and designs are the intellectual property of CCP hf. All artwork, screenshots, characters, vehicles, storylines, world facts or other recognizable features of the intellectual property relating to these trademarks are likewise the intellectual property of CCP hf. CCP hf. has granted permission to EVE Online incursions Discord bot to use EVE Online and all associated logos and designs for promotional and information purposes on its website but does not endorse, and is not in any way affiliated with, EVE Online incursions Discord bot. CCP is in no way responsible for the content on or functioning of this website, nor can it be liable for any damage arising from the use of this website.
